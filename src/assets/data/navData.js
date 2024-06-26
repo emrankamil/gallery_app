@@ -1,6 +1,7 @@
 export default [
   {
     label: "LIVING",
+    disabled: true,
     dropdown: [
       {
         title: "SEATING",
@@ -85,602 +86,443 @@ export default [
     ],
   },
   {
-    label: "DINING",
-    dropdown: [
+    "label": "DINING",
+    "disabled": true,
+    "dropdown": [
       {
-        title: "SEATING",
-        links: [
+        "title": "TABLES",
+        "links": [
           {
-            label: "SOFAS & LOVESEATS",
-            link: "/services/service1",
+            "label": "Dining Tables",
+            "link": "/dining-room/dining-tables",
           },
           {
-            label: "SECTIONALS",
-            link: "/services/service2",
+            "label": "Bar Tables",
+            "link": "/dining-room/bar-tables",
           },
           {
-            label: "CHAIRS",
-            link: "/services/service3",
-          },
-          {
-            label: "DAYBEDS",
-            link: "/services/service1",
-          },
-          {
-            label: "STOOLS, OTTOMANS & BENCHES",
-            link: "/services/service2",
-          },
-          {
-            label: "SHOP ALL SEATING",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Shop All Tables",
+            "link": "/dining-room/shop-all-tables",
+          }
+        ]
       },
       {
-        title: "TABLES",
-        links: [
+        "title": "CHAIRS",
+        "links": [
           {
-            label: "COFFEE TABLES",
-            link: "/services/service1",
+            "label": "Dining Chairs",
+            "link": "/dining-room/dining-chairs",
           },
           {
-            label: "SIDE TABLES",
-            link: "/services/service2",
+            "label": "Bar Stools",
+            "link": "/dining-room/bar-stools",
           },
           {
-            label: "CONSOLE & ENTRY TABLES",
-            link: "/services/service3",
-          },
-          {
-            label: "SHOP ALL TABLES",
-            link: "/services/service1",
-          },
-        ],
+            "label": "Shop All Seating",
+            "link": "/dining-room/shop-all-seating",
+          }
+        ]
       },
       {
-        title: "STORAGE",
-        links: [
+        "title": "STORAGE",
+        "links": [
           {
-            label: "CABINETS, SHELVING & BARS",
-            link: "/services/service1",
+            "label": "Dining Hutches & Buffets",
+            "link": "/dining-room/dining-hutches-buffets",
           },
           {
-            label: "SIDEBOARDS & MEDIA",
-            link: "/services/service2",
+            "label": "Wine Racks",
+            "link": "/dining-room/wine-racks",
           },
           {
-            label: "SHOP ALL STORAGE",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Shop All Storage",
+            "link": "/dining-room/shop-all-storage",
+          }
+        ]
       },
       {
-        title: "COLLECTIONS",
-        links: [
+        "title": "COLLECTIONS",
+        "links": [
           {
-            label: "SOFA & SECTIONAL COLLECTIONS",
-            link: "/services/service1",
+            "label": "Dining Sets",
+            "link": "/dining-room/dining-sets",
           },
           {
-            label: "FURNITURE COLLECTIONS",
-            link: "/services/service2",
-          },
-        ],
-      },
-    ],
+            "label": "Furniture Collections",
+            "link": "/dining-room/furniture-collections",
+          }
+        ]
+      }
+    ]
   },
   {
-    label: "BEDROOM",
-    dropdown: [
+    "label": "BEDROOM",
+    "disabled": true,
+    "dropdown": [
       {
-        title: "SEATING",
-        links: [
+        "title": "BEDS",
+        "links": [
           {
-            label: "SOFAS & LOVESEATS",
-            link: "/services/service1",
+            "label": "Platform Beds",
+            "link": "/bedroom/platform-beds",
           },
           {
-            label: "SECTIONALS",
-            link: "/services/service2",
+            "label": "Storage Beds",
+            "link": "/bedroom/storage-beds",
           },
           {
-            label: "CHAIRS",
-            link: "/services/service3",
-          },
-          {
-            label: "DAYBEDS",
-            link: "/services/service1",
-          },
-          {
-            label: "STOOLS, OTTOMANS & BENCHES",
-            link: "/services/service2",
-          },
-          {
-            label: "SHOP ALL SEATING",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Daybeds",
+            "link": "/bedroom/daybeds",
+          }
+        ]
       },
       {
-        title: "TABLES",
-        links: [
+        "title": "NIGHTSTANDS",
+        "links": [
           {
-            label: "COFFEE TABLES",
-            link: "/services/service1",
-          },
-          {
-            label: "SIDE TABLES",
-            link: "/services/service2",
-          },
-          {
-            label: "CONSOLE & ENTRY TABLES",
-            link: "/services/service3",
-          },
-          {
-            label: "SHOP ALL TABLES",
-            link: "/services/service1",
-          },
-        ],
+            "label": "Bedside Tables",
+            "link": "/bedroom/bedside-tables",
+          }
+        ]
       },
       {
-        title: "STORAGE",
-        links: [
+        "title": "DRESSERS & CHESTS",
+        "links": [
           {
-            label: "CABINETS, SHELVING & BARS",
-            link: "/services/service1",
+            "label": "Dressers",
+            "link": "/bedroom/dressers",
           },
           {
-            label: "SIDEBOARDS & MEDIA",
-            link: "/services/service2",
-          },
-          {
-            label: "SHOP ALL STORAGE",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Chests",
+            "link": "/bedroom/chests",
+          }
+        ]
       },
       {
-        title: "COLLECTIONS",
-        links: [
+        "title": "COLLECTIONS",
+        "links": [
           {
-            label: "SOFA & SECTIONAL COLLECTIONS",
-            link: "/services/service1",
-          },
-          {
-            label: "FURNITURE COLLECTIONS",
-            link: "/services/service2",
-          },
-        ],
-      },
-    ],
+            "label": "Bedroom Sets",
+            "link": "/bedroom/bedroom-sets",
+          }
+        ]
+      }
+    ]
   },
   {
-    label: "RUGS",
-    dropdown: [
+    "label": "RUGS",
+    "disabled": true,
+    "dropdown": [
       {
-        title: "SEATING",
-        links: [
+        "title": "AREA RUGS",
+        "links": [
           {
-            label: "SOFAS & LOVESEATS",
-            link: "/services/service1",
+            "label": "Traditional Rugs",
+            "link": "/rugs/traditional-rugs",
           },
           {
-            label: "SECTIONALS",
-            link: "/services/service2",
+            "label": "Modern Rugs",
+            "link": "/rugs/modern-rugs",
           },
           {
-            label: "CHAIRS",
-            link: "/services/service3",
+            "label": "Shag Rugs",
+            "link": "/rugs/shag-rugs",
           },
           {
-            label: "DAYBEDS",
-            link: "/services/service1",
+            "label": "Outdoor Rugs",
+            "link": "/rugs/outdoor-rugs",
           },
           {
-            label: "STOOLS, OTTOMANS & BENCHES",
-            link: "/services/service2",
-          },
-          {
-            label: "SHOP ALL SEATING",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Shop All Area Rugs",
+            "link": "/rugs/shop-all-area-rugs",
+          }
+        ]
       },
       {
-        title: "TABLES",
-        links: [
+        "title": "RUNNERS",
+        "links": [
           {
-            label: "COFFEE TABLES",
-            link: "/services/service1",
+            "label": "Hallway Runners",
+            "link": "/rugs/hallway-runners",
           },
           {
-            label: "SIDE TABLES",
-            link: "/services/service2",
+            "label": "Kitchen Runners",
+            "link": "/rugs/kitchen-runners",
           },
           {
-            label: "CONSOLE & ENTRY TABLES",
-            link: "/services/service3",
-          },
-          {
-            label: "SHOP ALL TABLES",
-            link: "/services/service1",
-          },
-        ],
+            "label": "Shop All Runners",
+            "link": "/rugs/shop-all-runners",
+          }
+        ]
       },
       {
-        title: "STORAGE",
-        links: [
+        "title": "RUG PADS",
+        "links": [
           {
-            label: "CABINETS, SHELVING & BARS",
-            link: "/services/service1",
+            "label": "Area Rug Pads",
+            "link": "/rugs/area-rug-pads",
           },
           {
-            label: "SIDEBOARDS & MEDIA",
-            link: "/services/service2",
-          },
-          {
-            label: "SHOP ALL STORAGE",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Runner Rug Pads",
+            "link": "/rugs/runner-rug-pads",
+          }
+        ]
       },
       {
-        title: "COLLECTIONS",
-        links: [
+        "title": "COLLECTIONS",
+        "links": [
           {
-            label: "SOFA & SECTIONAL COLLECTIONS",
-            link: "/services/service1",
-          },
-          {
-            label: "FURNITURE COLLECTIONS",
-            link: "/services/service2",
-          },
-        ],
-      },
-    ],
+            "label": "Rug Collections",
+            "link": "/rugs/rug-collections",
+          }
+        ]
+      }
+    ]
   },
   {
-    label: "LIGHTING",
-    dropdown: [
+    "label": "LIGHTING",
+    "disabled": true,
+    "dropdown": [
       {
-        title: "SEATING",
-        links: [
+        "title": "PENDANT LIGHTS",
+        "links": [
           {
-            label: "SOFAS & LOVESEATS",
-            link: "/services/service1",
+            "label": "Modern Pendant Lights",
+            "link": "/lighting/modern-pendant-lights",
           },
           {
-            label: "SECTIONALS",
-            link: "/services/service2",
+            "label": "Chandeliers",
+            "link": "/lighting/chandeliers",
           },
           {
-            label: "CHAIRS",
-            link: "/services/service3",
-          },
-          {
-            label: "DAYBEDS",
-            link: "/services/service1",
-          },
-          {
-            label: "STOOLS, OTTOMANS & BENCHES",
-            link: "/services/service2",
-          },
-          {
-            label: "SHOP ALL SEATING",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Ceiling Fans",
+            "link": "/lighting/ceiling-fans",
+          }
+        ]
       },
       {
-        title: "TABLES",
-        links: [
+        "title": "FLOOR LAMPS",
+        "links": [
           {
-            label: "COFFEE TABLES",
-            link: "/services/service1",
+            "label": "Tripod Floor Lamps",
+            "link": "/lighting/tripod-floor-lamps",
           },
           {
-            label: "SIDE TABLES",
-            link: "/services/service2",
-          },
-          {
-            label: "CONSOLE & ENTRY TABLES",
-            link: "/services/service3",
-          },
-          {
-            label: "SHOP ALL TABLES",
-            link: "/services/service1",
-          },
-        ],
+            "label": "Arc Floor Lamps",
+            "link": "/lighting/arc-floor-lamps",
+          }
+        ]
       },
       {
-        title: "STORAGE",
-        links: [
+        "title": "TABLE LAMPS",
+        "links": [
           {
-            label: "CABINETS, SHELVING & BARS",
-            link: "/services/service1",
+            "label": "Modern Table Lamps",
+            "link": "/lighting/modern-table-lamps",
           },
           {
-            label: "SIDEBOARDS & MEDIA",
-            link: "/services/service2",
-          },
-          {
-            label: "SHOP ALL STORAGE",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Bedside Table Lamps",
+            "link": "/lighting/bedside-table-lamps",
+          }
+        ]
       },
       {
-        title: "COLLECTIONS",
-        links: [
+        "title": "SHOP ALL LIGHTING",
+        "links": [
           {
-            label: "SOFA & SECTIONAL COLLECTIONS",
-            link: "/services/service1",
-          },
-          {
-            label: "FURNITURE COLLECTIONS",
-            link: "/services/service2",
-          },
-        ],
-      },
-    ],
+            "label": "All Lighting",
+            "link": "/lighting/all-lighting",
+          }
+        ]
+      }
+    ]
   },
   {
-    label: "BEDING AND BATH",
-    dropdown: [
+    "label": "BEDING & BATH",
+    "disabled": true,
+    "dropdown": [
       {
-        title: "SEATING",
-        links: [
+        "title": "BEDDING",
+        "links": [
           {
-            label: "SOFAS & LOVESEATS",
-            link: "/services/service1",
+            "label": "Bed Sheets",
+            "link": "/beding-bath/bed-sheets",
           },
           {
-            label: "SECTIONALS",
-            link: "/services/service2",
+            "label": "Comforters",
+            "link": "/beding-bath/comforters",
           },
           {
-            label: "CHAIRS",
-            link: "/services/service3",
-          },
-          {
-            label: "DAYBEDS",
-            link: "/services/service1",
-          },
-          {
-            label: "STOOLS, OTTOMANS & BENCHES",
-            link: "/services/service2",
-          },
-          {
-            label: "SHOP ALL SEATING",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Pillows",
+            "link": "/beding-bath/pillows",
+          }
+        ]
       },
       {
-        title: "TABLES",
-        links: [
+        "title": "BATH",
+        "links": [
           {
-            label: "COFFEE TABLES",
-            link: "/services/service1",
+            "label": "Towels",
+            "link": "/beding-bath/towels",
           },
           {
-            label: "SIDE TABLES",
-            link: "/services/service2",
-          },
-          {
-            label: "CONSOLE & ENTRY TABLES",
-            link: "/services/service3",
-          },
-          {
-            label: "SHOP ALL TABLES",
-            link: "/services/service1",
-          },
-        ],
+            "label": "Shower Curtains",
+            "link": "/beding-bath/shower-curtains",
+          }
+        ]
       },
       {
-        title: "STORAGE",
-        links: [
+        "title": "SHOP ALL",
+        "links": [
           {
-            label: "CABINETS, SHELVING & BARS",
-            link: "/services/service1",
-          },
-          {
-            label: "SIDEBOARDS & MEDIA",
-            link: "/services/service2",
-          },
-          {
-            label: "SHOP ALL STORAGE",
-            link: "/services/service3",
-          },
-        ],
-      },
-      {
-        title: "COLLECTIONS",
-        links: [
-          {
-            label: "SOFA & SECTIONAL COLLECTIONS",
-            link: "/services/service1",
-          },
-          {
-            label: "FURNITURE COLLECTIONS",
-            link: "/services/service2",
-          },
-        ],
-      },
-    ],
+            "label": "All Beding & Bath",
+            "link": "/beding-bath/all",
+          }
+        ]
+      }
+    ]
   },
   {
-    label: "LIVING",
-    dropdown: [
+    "label": "KIDS ROOM",
+    "disabled": true,
+    "dropdown": [
       {
-        title: "SEATING",
-        links: [
+        "title": "SEATING",
+        "links": [
           {
-            label: "SOFAS & LOVESEATS",
-            link: "/services/service1",
+            "label": "Kids Sofas & Loveseats",
+            "link": "/kids-room/kids-sofas-loveseats",
           },
           {
-            label: "SECTIONALS",
-            link: "/services/service2",
+            "label": "Kids Sectionals",
+            "link": "/kids-room/kids-sectionals",
           },
           {
-            label: "CHAIRS",
-            link: "/services/service3",
+            "label": "Kids Chairs",
+            "link": "/kids-room/kids-chairs",
           },
           {
-            label: "DAYBEDS",
-            link: "/services/service1",
+            "label": "Kids Daybeds",
+            "link": "/kids-room/kids-daybeds",
           },
           {
-            label: "STOOLS, OTTOMANS & BENCHES",
-            link: "/services/service2",
+            "label": "Kids Stools, Ottomans & Benches",
+            "link": "/kids-room/kids-stools-ottomans-benches",
           },
           {
-            label: "SHOP ALL SEATING",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Shop All Kids Seating",
+            "link": "/kids-room/shop-all-kids-seating",
+          }
+        ]
       },
       {
-        title: "TABLES",
-        links: [
+        "title": "TABLES",
+        "links": [
           {
-            label: "COFFEE TABLES",
-            link: "/services/service1",
+            "label": "Kids Coffee Tables",
+            "link": "/kids-room/kids-coffee-tables",
           },
           {
-            label: "SIDE TABLES",
-            link: "/services/service2",
+            "label": "Kids Side Tables",
+            "link": "/kids-room/kids-side-tables",
           },
           {
-            label: "CONSOLE & ENTRY TABLES",
-            link: "/services/service3",
+            "label": "Kids Console & Entry Tables",
+            "link": "/kids-room/kids-console-entry-tables",
           },
           {
-            label: "SHOP ALL TABLES",
-            link: "/services/service1",
-          },
-        ],
+            "label": "Shop All Kids Tables",
+            "link": "/kids-room/shop-all-kids-tables",
+          }
+        ]
       },
       {
-        title: "STORAGE",
-        links: [
+        "title": "STORAGE",
+        "links": [
           {
-            label: "CABINETS, SHELVING & BARS",
-            link: "/services/service1",
+            "label": "Kids Cabinets, Shelving & Bars",
+            "link": "/kids-room/kids-cabinets-shelving-bars",
           },
           {
-            label: "SIDEBOARDS & MEDIA",
-            link: "/services/service2",
+            "label": "Kids Sideboards & Media",
+            "link": "/kids-room/kids-sideboards-media",
           },
           {
-            label: "SHOP ALL STORAGE",
-            link: "/services/service3",
-          },
-        ],
+            "label": "Shop All Kids Storage",
+            "link": "/kids-room/shop-all-kids-storage",
+          }
+        ]
       },
       {
-        title: "COLLECTIONS",
-        links: [
+        "title": "COLLECTIONS",
+        "links": [
           {
-            label: "SOFA & SECTIONAL COLLECTIONS",
-            link: "/services/service1",
+            "label": "Kids Sofa & Sectional Collections",
+            "link": "/kids-room/kids-sofa-sectional-collections",
           },
           {
-            label: "FURNITURE COLLECTIONS",
-            link: "/services/service2",
-          },
-        ],
-      },
-    ],
+            "label": "Kids Furniture Collections",
+            "link": "/kids-room/kids-furniture-collections",
+          }
+        ]
+      }
+    ]
   },
   {
-    label: "DINING",
-    dropdown: [
+    "label": "SOFAS",
+    "disabled": true,
+    "dropdown": [
       {
-        title: "SEATING",
-        links: [
+        "title": "TYPES",
+        "links": [
           {
-            label: "SOFAS & LOVESEATS",
-            link: "/services/service1",
+            "label": "MODERN SOFAS",
+            "link": "/sofas/modern-sofas",
           },
           {
-            label: "SECTIONALS",
-            link: "/services/service2",
+            "label": "TRADITIONAL SOFAS",
+            "link": "/sofas/traditional-sofas",
           },
           {
-            label: "CHAIRS",
-            link: "/services/service3",
+            "label": "SECTIONAL SOFAS",
+            "link": "/sofas/sectional-sofas",
           },
           {
-            label: "DAYBEDS",
-            link: "/services/service1",
+            "label": "RECLINER SOFAS",
+            "link": "/sofas/recliner-sofas",
           },
           {
-            label: "STOOLS, OTTOMANS & BENCHES",
-            link: "/services/service2",
+            "label": "SOFA BEDS",
+            "link": "/sofas/sofa-beds",
           },
           {
-            label: "SHOP ALL SEATING",
-            link: "/services/service3",
+            "label": "LOVESEATS",
+            "link": "/sofas/loveseats",
           },
-        ],
+          {
+            "label": "SLEEPER SOFAS",
+            "link": "/sofas/sleeper-sofas",
+          },
+        ]
       },
       {
-        title: "TABLES",
-        links: [
+        "title": "COLLECTIONS",
+        "links": [
           {
-            label: "COFFEE TABLES",
-            link: "/services/service1",
+            "label": "MODERN SOFA COLLECTIONS",
+            "link": "/sofas/modern-sofa-collections",
           },
           {
-            label: "SIDE TABLES",
-            link: "/services/service2",
-          },
-          {
-            label: "CONSOLE & ENTRY TABLES",
-            link: "/services/service3",
-          },
-          {
-            label: "SHOP ALL TABLES",
-            link: "/services/service1",
-          },
-        ],
-      },
-      {
-        title: "STORAGE",
-        links: [
-          {
-            label: "CABINETS, SHELVING & BARS",
-            link: "/services/service1",
-          },
-          {
-            label: "SIDEBOARDS & MEDIA",
-            link: "/services/service2",
-          },
-          {
-            label: "SHOP ALL STORAGE",
-            link: "/services/service3",
-          },
-        ],
-      },
-      {
-        title: "COLLECTIONS",
-        links: [
-          {
-            label: "SOFA & SECTIONAL COLLECTIONS",
-            link: "/services/service1",
-          },
-          {
-            label: "FURNITURE COLLECTIONS",
-            link: "/services/service2",
-          },
-        ],
-      },
-    ],
+            "label": "TRADITIONAL SOFA COLLECTIONS",
+            "link": "/sofas/traditional-sofa-collections",
+          }
+        ]
+      }
+    ]
   },
   {
     label: "BEDROOM",
+    disabled: true,
     dropdown: [
       {
         title: "SEATING",

@@ -16,7 +16,13 @@ body,
   background-color: #edeae3;
   font-family: "Poppins", sans-serif;
 }
-
+.topbar{
+  background-color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+.topbar:hover{
+  background-color: #edeae3
+}
 .img-slider-img{
   object-fit: cover;
   width:100%;
@@ -36,15 +42,16 @@ body,
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
-.image-slider-btn:hover{
+/* .image-slider-btn:hover{
   background-color: rgba(0,0,0,0.5);
-}
-.image-slider-btn:hover >*{
+} */
+/* .image-slider-btn:hover >*{
   animation:squash 0.3s ease-in-out;
-}
+} */
 .image-slider-btn >*{
-  stroke: white;
-  fill: black;
+  color: white;
+  opacity: 0.5;
+  stroke: gray;
 }
 .image-slider-dot{
   all: unset;

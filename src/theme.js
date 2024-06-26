@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material";
+import { createTheme, responsiveFontSizes } from "@mui/material";
 
 export const tokens = (mode) => ({
   ...(mode === "light"
@@ -15,15 +15,15 @@ export const tokens = (mode) => ({
           900: "#141414",
         },
         primary: {
-          100: "#cad9d9",
-          200: "#b1c7c7",
-          300: "#8daeae",
-          400: "#779e9e",
-          500: "#558686",
-          600: "#4d7a7a",
-          700: "#3c5f5f",
-          800: "#2f4a4a",
-          900: "#243838",
+          100: "#fcfbfa",
+          200: "#f8f7f5",
+          300: "#f5f3f1",
+          400: "#f1efec",
+          500: "#eeebe7",
+          600: "#bebcb9",
+          700: "#8f8d8b",
+          800: "#5f5e5c",
+          900: "#302f2e",
         },
         secondary: {
           100: "#ffeebc",
@@ -46,17 +46,6 @@ export const tokens = (mode) => ({
           700: "#a42b0d",
           800: "#7f220a",
           900: "#611a08",
-        },
-        whiteAccent: {
-          100: "#fcfbfa",
-          200: "#f8f7f5",
-          300: "#f5f3f1",
-          400: "#f1efec",
-          500: "#eeebe7",
-          600: "#bebcb9",
-          700: "#8f8d8b",
-          800: "#5f5e5c",
-          900: "#302f2e",
         },
       }
     : {
@@ -145,13 +134,17 @@ export const themeSettings = (mode) => {
       fontSize: 12,
       h1: {
         fontFamily: "Poppins, sans-serif",
-        fontSize: 24,
+        fontSize: 30,
       },
       h2: {
         fontFamily: "Poppins, sans-serif",
-        fontSize: 20,
+        fontSize: 24,
       },
       h3: {
+        fontFamily: "Poppins, sans-serif",
+        fontSize: 20,
+      },
+      h4: {
         fontFamily: "Poppins, sans-serif",
         fontSize: 14,
       },
@@ -159,7 +152,9 @@ export const themeSettings = (mode) => {
   };
 };
 
-export const theme = createTheme(themeSettings("light"));
+export const theme = responsiveFontSizes(createTheme(themeSettings("light")));
+
+
 // //context for color mode
 // export const ColorModeContext = createContext({
 //   toggleColorMode: () => {},

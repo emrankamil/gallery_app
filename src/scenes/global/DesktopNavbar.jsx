@@ -9,7 +9,7 @@ import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import { tokens } from "../../theme";
 import DropDown from "./DropDown";
 
-function TopBar() {
+function DesktopNavbar() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const navdata = useSelector((state) => state.navdata);
@@ -21,20 +21,19 @@ function TopBar() {
     setCurrentDropdown(label);
   };
   const handleMouseLeave = ({ label }) => {
-      if (!isFocused) {
-        setCurrentDropdown(null);
-      }
+    if (!isFocused) {
+      setCurrentDropdown(null);
+    }
   };
 
   useEffect(() => {
     if (!isFocused) {
       setCurrentDropdown(null);
     }
-  }
-  , [isFocused]);
+  }, [isFocused]);
 
   return (
-    <Box px="20px" className='topbar'>
+    <Box px="20px" className="topbar">
       <Box
         display="flex"
         justifyContent="space-between"
@@ -108,4 +107,4 @@ function TopBar() {
   );
 }
 
-export default TopBar;
+export default DesktopNavbar;
