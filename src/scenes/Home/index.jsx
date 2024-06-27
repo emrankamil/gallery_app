@@ -6,7 +6,9 @@ import bag2 from "../../assets/images/bag2.jpg";
 import bag3 from "../../assets/images/bag3.jpg";
 import bag4 from "../../assets/images/bag4.jpg";
 import bag5 from "../../assets/images/bag5.jpg";
+import bag6 from "../../assets/images/bag6.jpg";
 import Header from "../../components/Header";
+import ThreeByTwoBoard from "../../components/display_boards/ThreeByTwoBoard";
 
 function Home() {
   const IMAGES = [bag1, bag2, bag3, bag4, bag5];
@@ -24,6 +26,7 @@ function Home() {
           subtitle="Modern silhouettes, artisanal lighting, and European linen pillows and throws create a welcome retreat. Escape the ordinary."
           label="SHOP NOW"
         />
+        <ThreeByTwoBoard images={[...IMAGES, bag6]}/>
       </Box>
     </Box>
   );

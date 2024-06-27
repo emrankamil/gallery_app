@@ -13,10 +13,9 @@ function App() {
       <CssBaseline />
       <div className="app">
         <main className="content">
-          {/* <TopBar /> */}
-          {/* <SideBar/> */}
-          <Navbar/>
+          <TopBar />
           <Home />
+          <SideBar />
         </main>
       </div>
     </ThemeProvider>

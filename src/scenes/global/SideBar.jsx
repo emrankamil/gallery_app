@@ -4,7 +4,7 @@ import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../theme";
 import { useDispatch, useSelector } from "react-redux";
-import {toggleSlice} from '../../features/navbar/toggleSlice'
+import { selectToggle, hideSidebar } from "./toggleSlice";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -13,45 +13,42 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     <MenuItem
       active={selected === title}
       style={{
-        color: colors.gray[100],
+        color: colors.gray[900],
       }}
       onClick={() => setSelected(title)}
       icon={icon}
     >
       <Typography>{title}</Typography>
-      <Link to={to} />
+      {/* <Link to={to} /> */}
     </MenuItem>
   );
 };
+
 const SideBar = () => {
-  // const [toggled, setToggled] = useState(false);
-  const toggled = useSelector((state) => state.toggle)
+  const theme = useTheme();
+  const colors = tokens(theme.palette.mode);
+  const toggled = useSelector(selectToggle)
   const dispatch = useDispatch();
+  
   return (
     <div style={{ display: "flex", height: "100%", minHeight: "400px" }}>
       <Sidebar
-        onBackdropClick={() => dispatch(toggleSlice.actions.hideSidebar())}
+        onBackdropClick={() => dispatch(hideSidebar())}
         toggled={toggled}
-        breakPoint="always"
+        breakPoint="all"
+        backgroundColor={colors.primary[500]}
+        rootStyles={{
+          // paddingTop: "80px",
+        }}
       >
         <Menu>
+          <Item title="Dashboard" to="/dashboard" />
           <MenuItem> Documentation</MenuItem>
           <MenuItem> Calendar</MenuItem>
           <MenuItem> E-commerce</MenuItem>
           <MenuItem> Examples</MenuItem>
         </Menu>
       </Sidebar>
-      <main style={{ display: "flex", padding: 10 }}>
-        <div>
-          <button
-            className="sb-button"
-            onClick={() => dispatch(toggleSlice.actions.showSidebar())}
-            showSidebar
-          >
-            Toggle
-          </button>
-        </div>
-      </main>
     </div>
   );
 };

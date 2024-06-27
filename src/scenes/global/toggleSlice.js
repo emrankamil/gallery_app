@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = false;
 
 export const toggleSlice = createSlice({
-  name: "navdata",
+  name: "toggle",
   initialState,
   reducers: {
     showSidebar: {
@@ -19,4 +19,6 @@ export const toggleSlice = createSlice({
   },
 });
 
+export const selectToggle = (state) => state.toggle;
 export default toggleSlice.reducer;
+export const { showSidebar, hideSidebar } = toggleSlice.actions;

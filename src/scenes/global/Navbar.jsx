@@ -1,8 +1,9 @@
-import { Box, Typography, useTheme } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Logo from "../../components/Logo";
 import { tokens } from "../../theme";
-import { useSelector } from "react-redux";
+import { showSidebar } from "./toggleSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { Box, Typography, useTheme } from "@mui/material";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import TurnedInNotOutlinedIcon from "@mui/icons-material/TurnedInNotOutlined";
@@ -14,23 +15,7 @@ function Navbar() {
   const colors = tokens(theme.palette.mode);
   const navdata = useSelector((state) => state.navdata);
   const data = navdata.find((item) => item.label === "LIVING");
-  const [currentDropdown, setCurrentDropdown] = useState(null);
-  const [isFocused, setIsFocused] = useState(false);
-
-  const handleMouseEnter = (label) => {
-    setCurrentDropdown(label);
-  };
-  const handleMouseLeave = ({ label }) => {
-    if (!isFocused) {
-      setCurrentDropdown(null);
-    }
-  };
-
-  useEffect(() => {
-    if (!isFocused) {
-      setCurrentDropdown(null);
-    }
-  }, [isFocused]);
+  const dispatch = useDispatch();
 
   return (
     <Box px="20px" className="">
@@ -45,8 +30,11 @@ function Navbar() {
           justifyContent="space-between"
           alignItems="center"
           width="60px"
+        >
+          <button
+            className="sb-button"
+            onClick={() => dispatch(showSidebar())}
           >
-          <button>
             <MenuIcon />
           </button>
           <button>
