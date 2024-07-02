@@ -1,0 +1,42 @@
+.footer{
+    background-color: white;
+    padding: 10px 20px;
+}
+.footer_top{
+    display: flex;
+}
+
+.footer_middle {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.footer_column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer_column Typography {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer_column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_column ul li {
+  margin-bottom: 10px;
+}
+
+.footer_column ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer_column ul li a:hover {
+  text-decoration: underline;
+}

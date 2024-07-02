@@ -4,8 +4,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import TopBar from "./scenes/global/TopBar";
 import { theme } from "./theme";
 import SideBar from "./scenes/global/SideBar";
-import Box from "@mui/material/Box";
-import Navbar from "./scenes/global/Navbar";
+import Footer from "./scenes/global/Footer";
 
 function App() {
   return (
@@ -13,9 +12,10 @@ function App() {
       <CssBaseline />
       <div className="app">
         <main className="content">
-          <TopBar />
+          {/* <TopBar />
           <Home />
-          <SideBar />
+          <SideBar /> */}
+          <Footer/>
         </main>
       </div>
     </ThemeProvider>

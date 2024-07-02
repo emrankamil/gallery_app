@@ -21,7 +21,7 @@ function TopBar() {
   });
 
   return (
-    <Box px="20px" className="topbar">
+    <Box px="20px">
       {isDesktop ? <DesktopNavbar /> : <Navbar />}
     </Box>
   );

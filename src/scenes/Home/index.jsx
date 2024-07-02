@@ -9,12 +9,13 @@ import bag5 from "../../assets/images/bag5.jpg";
 import bag6 from "../../assets/images/bag6.jpg";
 import Header from "../../components/Header";
 import ThreeByTwoBoard from "../../components/display_boards/ThreeByTwoBoard";
+import ImageAndText from "../../components/display_boards/ImageAndText";
 
 function Home() {
   const IMAGES = [bag1, bag2, bag3, bag4, bag5];
   return (
     <Box>
-      <Box width="100%" height="500px" marigin="0 auto">
+      <Box width="100%" marigin="0 auto" gap="20px">
         <Header
           title="THE FREE SHIPPING EVENT"
           subtitle="ENJOY FREE SHIPPING & DELIVERY ON BR HOME ORDERS OF $1500"
@@ -26,7 +27,38 @@ function Home() {
           subtitle="Modern silhouettes, artisanal lighting, and European linen pillows and throws create a welcome retreat. Escape the ordinary."
           label="SHOP NOW"
         />
-        <ThreeByTwoBoard images={[...IMAGES, bag6]}/>
+        <ThreeByTwoBoard images={[...IMAGES, bag6]} />
+        <Slider imageUrls={IMAGES} />
+        <Header
+          title="THE FREE SHIPPING EVENT"
+          subtitle="ENJOY FREE SHIPPING & DELIVERY ON BR HOME ORDERS OF $1500"
+          label="SHOP NOW"
+        />
+        <Box className="single-img">
+          <img className="" src={bag2} alt="bag1" />
+        </Box>
+        <Header
+          title="THE FREE SHIPPING EVENT"
+          subtitle="ENJOY FREE SHIPPING & DELIVERY ON BR HOME ORDERS OF $1500"
+          label="SHOP NOW"
+        />
+        <Slider imageUrls={IMAGES} />
+        <Header
+          title="THE FREE SHIPPING EVENT"
+          subtitle="ENJOY FREE SHIPPING & DELIVERY ON BR HOME ORDERS OF $1500"
+          label="SHOP NOW"
+        />
+        <ImageAndText />
+        <Box className="ir-img">
+          <img className="" src={bag2} alt="bag1" />
+        </Box>
+        <Header
+          title="THE FREE SHIPPING EVENT"
+          subtitle="ENJOY FREE SHIPPING & DELIVERY ON BR HOME ORDERS OF $1500"
+          label="SHOP NOW"
+        />
+        <ImageAndText />
+        <Slider imageUrls={IMAGES} />
       </Box>
     </Box>
   );
